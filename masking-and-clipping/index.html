@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="app">
+    <h1>How to clip and mask images</h1>
+    <div class="container">
+      <div class="example">
+        <div class="img-container">
+          <img id="img-area-1"
+            src="https://images.unsplash.com/photo-1557765818-c725414650ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" />
+        </div>
+        <section class="details">
+          <h2>Linear gradient mask</h2>
+          <code>
+  #img-area-1
+  {
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: linear-gradient(black, transparent);
+  }
+          </code>
+        </section>
+      </div>
+      <div class="example">
+        <div class="img-container">
+          <img id="img-area-2"
+            src="https://images.unsplash.com/photo-1557765818-c725414650ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" />
+        </div>
+        <section class="details">
+          <h2>Mask with PNG with transparent background</h2>
+          <code>
+  #img-area-2
+  {
+    -webkit-mask-image: url('./public//My\ project.png');
+    mask-image: url('./public/My\ project.png');
+  }
+            </code>
+        </section>
+      </div>
+      <div class="example">
+        <div class="img-container">
+          <img id="img-area-3"
+            src="https://images.unsplash.com/photo-1557765818-c725414650ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" />
+        </div>
+        <section class="details">
+          <h2>Mask - paint splatter PNG</h2>
+          <code>
+  #img-area-3
+  {
+    -webkit-mask-image: url('./public/splatter-1.png');
+    mask-image: url('./public/splatter-1.png');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+  }
+            </code>
+        </section>
+      </div>
+      <div class="example">
+        <div class="img-container">
+          <img id="img-area-4"
+            src="https://images.unsplash.com/photo-1557765818-c725414650ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" />
+        </div>
+        <section class="details">
+          <h2>Mask - paint splatter SVG</h2>
+          <code>
+  #img-area-4
+  {
+    -webkit-mask-image: url('./public/splatter-2.svg');
+    mask-image: url('./public/splatter-2.svg');
+    -webkit-mask-size: cover;
+    mask-size: cover;
+    -webkit-mask-position: center left;
+    mask-position: center left;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+            </code>
+        </section>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
