@@ -39,8 +39,8 @@
           <code>
   #img-area-2
   {
-    -webkit-mask-image: url('./public//My\ project.png');
-    mask-image: url('./public/My\ project.png');
+    -webkit-mask-image: url('./public//m-transparent.png');
+    mask-image: url('./public/m-transparent.png');
   }
             </code>
         </section>
@@ -79,6 +79,28 @@
     mask-size: cover;
     -webkit-mask-position: center left;
     mask-position: center left;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+  }
+            </code>
+        </section>
+      </div>
+      <div class="example">
+        <div class="img-container">
+          <img id="img-area-5"
+            src="https://images.unsplash.com/photo-1557765818-c725414650ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" />
+        </div>
+        <section class="details">
+          <h2>Mask - butterfly PNG</h2>
+          <code>
+  #img-area-5
+  {
+    -webkit-mask-image: url('./public/butterfly-1860092_960_720.png');
+    mask-image: url('./public/butterfly-1860092_960_720.png');
+    -webkit-mask-size: contain;
+    mask-size: contain;
+    -webkit-mask-position: center;
+    mask-position: center;
     -webkit-mask-repeat: no-repeat;
     mask-repeat: no-repeat;
   }

@@ -153,6 +153,7 @@ code::before
   background-color: rgba(200, 200, 200, 1);
   /* width: 100%; */
   padding-left: 10px;
+  padding-right: 10px;
   display: block;
 }
 
@@ -226,6 +227,18 @@ img
   mask-size: cover;
   -webkit-mask-position: center left;
   mask-position: center left;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+#img-area-5
+{
+  -webkit-mask-image: url('./public/butterfly-1860092_960_720.png');
+  mask-image: url('./public/butterfly-1860092_960_720.png');
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-position: center;
+  mask-position: center;
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
 }
