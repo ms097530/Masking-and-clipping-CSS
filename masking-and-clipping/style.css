@@ -138,20 +138,22 @@ button:focus-visible
 code
 {
   display: block;
-  white-space: pre-wrap;
   background-color: rgba(255, 255, 255, 0.3);
   background-color: white;
   color: black;
-  overflow: auto;
-  /* max-width: 90%; */
-  /* padding-inline: 1rem; */
+  overflow-x: auto;
+}
+
+
+pre
+{
+  display: block;
 }
 
 code::before
 {
   content: "CSS";
   background-color: rgba(200, 200, 200, 1);
-  /* width: 100%; */
   padding-left: 10px;
   padding-right: 10px;
   display: block;
@@ -166,6 +168,7 @@ code::before
 .details
 {
   flex: 1;
+  overflow: auto;
 }
 
 .img-container
@@ -173,6 +176,7 @@ code::before
   width: 300px;
   height: 300px;
   position: relative;
+  flex-shrink: 0;
 }
 
 .img-container:hover::before
