@@ -37,13 +37,35 @@
             src="https://images.unsplash.com/photo-1557765818-c725414650ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" />
         </div>
         <section class="details">
-          <h2>Mask with PNG with transparent background</h2>
+          <h2>Mask with PNG</h2>
           <code>
             <pre>
     #img-area-2
     {
-      -webkit-mask-image: url('./public//m-transparent.png');bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb
+      -webkit-mask-image: url('./public//m-transparent.png');
       mask-image: url('./public/m-transparent.png');
+    }
+            </pre>
+            </code>
+        </section>
+      </div>
+      <div class="example">
+        <div class="img-container">
+          <img id="img-area-2b"
+            src="https://images.unsplash.com/photo-1557765818-c725414650ef?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80" />
+        </div>
+        <section class="details">
+          <h2>Mask with PNG with transparent background</h2>
+          <code>
+            <pre>
+    #img-area-2b
+    {
+      -webkit-mask-image: url('./public//m-transparent.png'),
+      linear-gradient(black, rgba(0, 0, 0, 0.3), transparent);
+      mask-image: url('./public//m-transparent.png'),
+      linear-gradient(black, rgba(0, 0, 0, 0.3), transparent);
+      -webkit-mask-composite: destination-in;
+      mask-composite: intersect;
     }
             </pre>
             </code>

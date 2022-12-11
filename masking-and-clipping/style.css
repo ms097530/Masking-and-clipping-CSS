@@ -215,6 +215,17 @@ img
   mask-image: url('./public/m-transparent.png');
 }
 
+#img-area-2b
+{
+  -webkit-mask-image: url('./public//m-transparent.png'),
+    linear-gradient(black, rgba(0, 0, 0, 0.3), transparent);
+  mask-image: url('./public//m-transparent.png'),
+    linear-gradient(black, rgba(0, 0, 0, 0.3), transparent);
+  -webkit-mask-composite: destination-in;
+  mask-composite: intersect;
+}
+
+
 #img-area-3
 {
   -webkit-mask-image: url('./public/splatter-1.png');
